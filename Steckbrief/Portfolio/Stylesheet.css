@@ -7,14 +7,22 @@ body {
         margin: auto }
         a:hover {
             background: black; }
-    .extern {
-        background-image: url(./icons/facebook-logo.png);
-        background-position: top right;
-        background-repeat: space;
-        padding-right: 0px; 
-        padding-left: 0px;
-        padding-top: 5px; 
-        padding-bottom: 0px; }
+        .extern {
+            background-image: url(./icons/facebook-logo.png);
+            background-position: top right;
+            background-repeat: space;
+            padding-right: 0px; 
+            padding-left: 0px;
+            padding-top: 5px; 
+            padding-bottom: 0px; }
+        .extern1 {
+            background-image: url(./icons/instagram-logo.png);
+            background-position: top right;
+            background-repeat: space;
+            padding-right: 0px; 
+            padding-left: 0px;
+            padding-top: 5px; 
+            padding-bottom: 0px; }
     h1 {
         font-family: Arial, Helvetica, sans-serif }
     h2 {
