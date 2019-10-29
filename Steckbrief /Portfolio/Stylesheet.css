@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("bg.png") }
+    h1 {
+    font-family: Arial, Helvetica, sans-serif }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif }
+    h3 {
+        font-family: Arial, Helvetica, sans-serif }
+    nav { 
+        position: fixed;
+        box-sizing: border-box; border-radius: 0px 0px 10px 10px; line-height: 40px;
+        top: 0px;
+        right: 322px;
+        background: black }
+    section { 
+        width:800px; height:auto;
+        margin:auto }
+    form {
+         width: 490px; } 
+    input {
+        width: 270px;
+        height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: white;
+        background-color: darkgray;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        border: 1px solid white; }
+    textarea {
+        width: 370px;
+        height: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-left: 20px;
+        padding-top: 5px;
+        background-color: darkgray;
+        border: 1px solid white; }
+    .input-button {
+        width: 100px;
+        padding-left: 0; } 
+    .input-button:hover{
+        color: #333333; }
+    ::placeholder {
+        color: white; }
+        
+        
