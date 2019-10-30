@@ -33,7 +33,7 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         position: fixed;
-        box-sizing: border-box; border-radius: 0px 0px 10px 10px; line-height: 40px;
+        box-sizing: border-box; border-radius: 0px 0px 10px 10px; line-height: 40px; width: 340px;
         top: 0px;
         right: 322px;
         background: black }
@@ -42,9 +42,12 @@ body {
         a { 
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
-            color: whitesmoke }
-    .red {
-        color: grey; }
+            color: grey }
+        .red {
+        color: white; }
+    .black {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black; }
     section { 
         width:800px; height:auto;
         margin:auto }
