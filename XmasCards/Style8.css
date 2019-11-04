@@ -1,0 +1,30 @@
+body {
+    background-image: url("./Aufgabe_3/Station_8_Youtube/images/bg.png")
+}
+.container {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%); 
+}
+img {
+    z-index: 1;
+}
+video
+div.video {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    top: 50%;
+    max-width: 600px;
+    top: 65%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+.schleife {
+    position: absolute;
+    left: 790px;
+    top: 460px; 
+    z-index: 3;
+}
