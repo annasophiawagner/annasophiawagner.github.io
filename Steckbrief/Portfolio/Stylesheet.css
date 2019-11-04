@@ -14,16 +14,30 @@ body {
             background-repeat: space;
             padding-right: 0px; 
             padding-left: 0px;
-            padding-top: 5px; 
-            padding-bottom: 0px; }
+            padding-top: 4px; 
+            padding-bottom: 0px; 
+            position: relative;
+            bottom: 2em;
+            float:center;}
+        .extern:hover {
+            background-color: darkred;
+            box-sizing: content-box
+        }
         .extern1 {
             background-image: url(./icons/instagram-logo.png);
             background-position: top right;
             background-repeat: space;
             padding-right: 0px; 
             padding-left: 0px;
-            padding-top: 5px; 
-            padding-bottom: 0px; }
+            padding-top: 4px; 
+            padding-bottom: 0px; 
+            position: relative;
+            bottom: 2em;
+            float:center; }
+        .extern1:hover {
+            background-color: darkred;
+            box-sizing: content-box
+        }
     h1 {
         font-family: Arial, Helvetica, sans-serif }
     h2 {
@@ -39,7 +53,7 @@ body {
         right: 322px;
         background: black }
         a:hover {
-                background: white; }
+                background: darkred; }
         a { 
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
