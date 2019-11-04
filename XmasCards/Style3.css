@@ -1,0 +1,68 @@
+body {
+    margin: auto;
+    color: none;
+    background-image: url("./Aufgabe_3/Station_3_Hover/images/bg.png")
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 35%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 55%;
+    left: 45.5%;
+    transform: translate(-50%, -50%);
+}
+.stern1 {
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.stern1:hover {
+    background-image: url("./Aufgabe_3/Station_3_Hover/images/stern_hover.png")
+}
+.stern2 {
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 38%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.stern2:hover {
+    background-image: url("./Aufgabe_3/Station_3_Hover/images/stern_hover.png")
+}
+.stern3 {
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.stern3:hover {
+    background-image: url("./Aufgabe_3/Station_3_Hover/images/stern_hover.png")
+}
+.container {
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
