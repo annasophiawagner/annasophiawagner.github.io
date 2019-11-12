@@ -9,15 +9,17 @@ body {
 }
 
 .homebutton {
-    margin-top: 3em;
-    max-width: 150px;
+    width: 200px;
+    height: auto;
     text-align: center;
     transform-origin: center;
-    transition: transform .2s, visibility .2s ease-in;
+    transition: transform .2s, visibility .2s ease-in; 
 }
 
 .homebutton:hover {
-    transform: scale(1.1);    
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);  
 }
 
 h1 {
