@@ -1,4 +1,4 @@
-var Info: string = "in Gruppenarbeit mit Elena Mayer und Sophie Campbell"
+var Info: string = "(in Gruppenarbeit mit Elena Mayer und Sophie Campbell)"
 
 var leerzeichen: string = " ";
 var überschrift1: string = "Carbon Dioxide Emission";
