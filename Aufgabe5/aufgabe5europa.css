@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-image: radial-gradient(circle 100vw at left top,rgba(0,136,160,.5) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.5) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.4) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.5) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.4) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.5) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.4) 0,rgba(0,136,160,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(247,105,6,.25) 0,rgba(247,105,6,0) 100%),radial-gradient(circle 100vw at left center,rgba(28,222,126,.2) 0,rgba(28,222,126,0) 100%),radial-gradient(circle 100vw at right center,rgba(0,136,160,.4) 0,rgba(0,136,160,0) 100%);
+}
+
+.konsole {
+    color: darkred;
+    font-size: 1em;
+}
+
+nav {
+    margin-bottom: 60px;
+}
+
+.europe {
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.europe:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.northamerica {
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.northamerica:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.southamerica {
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.southamerica:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.africa {
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.africa:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.asia{
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.asia:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.australia {
+    transform-origin: center;
+    transition: transform .2s, visibility .2s ease-in; 
+}
+.australia:hover {
+    transform: scale(1.1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+section {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+
+footer p {
+    margin-top: 50px;
+    font-size: 10px;
+    opacity: .5;
+}
+
