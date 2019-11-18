@@ -1,4 +1,6 @@
-var leerzeichen: string = " "
+/*INFO: in Gruppenarbeit mit Sophie Campbell und Elena Mayer*/
+
+var leerzeichen: string = " ";
 var überschrift1: string = "Carbon Dioxide Emission";
 var überschrift2: string = "Europa:";
 var überschrift3: string = "Afrika:";
