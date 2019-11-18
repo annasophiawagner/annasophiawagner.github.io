@@ -1,4 +1,4 @@
-/*INFO: in Gruppenarbeit mit Sophie Campbell und Elena Mayer*/
+var Info: string = "in Gruppenarbeit mit Elena Mayer und Sophie Campbell"
 
 var leerzeichen: string = " ";
 var überschrift1: string = "Carbon Dioxide Emission";
@@ -62,7 +62,8 @@ var vergleichaustralien1: string = "Für Australien at sich 2018 im Vergleich zu
 var vergleichaustralien2: string = "Im Vergleich 2018 zu 2008 sind das in Australien ";
 
 
-
+console.log(Info)
+console.log(leerzeichen)
 console.log(überschrift1);
 console.log(leerzeichen);
 console.log(überschrift2);
