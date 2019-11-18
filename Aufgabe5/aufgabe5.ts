@@ -1,13 +1,13 @@
 var Info: string = "(in Gruppenarbeit mit Elena Mayer und Sophie Campbell)"
 
 var leerzeichen: string = " ";
-var überschrift1: string = "Carbon Dioxide Emission";
-var überschrift2: string = "Europa:";
-var überschrift3: string = "Afrika:";
-var überschrift4: string = "Südamerika:";
-var überschrift5: string = "Nordamerika:";
-var überschrift6: string = "Asien:";
-var überschrift7: string = "Australien";
+var überschrift1: string = "CO2 EMISSIONEN WELTWEIT";
+var überschrift2: string = "EUROPA";
+var überschrift3: string = "AFRIKA";
+var überschrift4: string = "SÜDAMERIKA";
+var überschrift5: string = "NORDAMERIKA";
+var überschrift6: string = "ASIEN";
+var überschrift7: string = "AUSTRALIEN";
 
 var afrika2018: number = 1235.5;
 var südamerika2018: number = 1261.5;
@@ -62,9 +62,9 @@ var vergleichaustralien1: string = "Für Australien at sich 2018 im Vergleich zu
 var vergleichaustralien2: string = "Im Vergleich 2018 zu 2008 sind das in Australien ";
 
 
-console.log(Info)
-console.log(leerzeichen)
+
 console.log(überschrift1);
+console.log(Info);
 console.log(leerzeichen);
 console.log(überschrift2);
 console.log(texteuropa1 + europa2018 + " kg CO2.");
