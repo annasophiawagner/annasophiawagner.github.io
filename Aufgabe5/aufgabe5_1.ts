@@ -1,1 +1,1 @@
-
+var blabla: string = "blabla"
