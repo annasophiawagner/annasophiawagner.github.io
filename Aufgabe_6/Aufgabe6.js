@@ -39,8 +39,8 @@ var ValueTwoAustralien = (australien2018 / gesamt2018) * 100;
 var ValueThreeAustralien = (australien2018 - australien2008) * 100 / australien2008;
 var ValueFourAustralien = (australien2018 - australien2008);
 function functioneuropa() {
-    document.querySelector("#Title").innerHTML = "Carbon Dioxide Emissions in Europe";
-    document.querySelector("#ValueOneEUROPATEXT").innerHTML = "Emission absolute of Europe in 2018";
+    document.querySelector("#Title").innerHTML = "CO2 Emissionen in Europa";
+    document.querySelector("#ValueOneText").innerHTML = "Emission in Europa Stand 2018";
     document.querySelector("#ValueOne").innerHTML = "" + europa2018;
     document.querySelector("#ValueTwo").innerHTML = "" + ValueTwoEuropa;
     document.querySelector("#ValueThree").innerHTML = "" + ValueThreeEuropa;
@@ -48,6 +48,15 @@ function functioneuropa() {
     document.querySelector(".chart").setAttribute('style', 'height:' + ValueTwoEuropa + '%');
 }
 window.addEventListener('load', function () {
-    document.querySelector('#europa').addEventListener('click', functioneuropa);
+    this.document.querySelector('#europa').addEventListener('click', functioneuropa);
 });
+function functionnordamerika() {
+    document.querySelector("#Titel").innerHTML = "CO2 Emissionen in Europa";
+    document.querySelector("ValueOneText").innerHTML = "Emission in Nordamerika Stand 2018";
+    document.querySelector("ValueOne").innerHTML = "" + nordamerika2018;
+    document.querySelector("ValueTwo").innerHTML = "" + ValueTwoNordamerika;
+    document.querySelector("ValueThree").innerHTML = "" + ValueThreeNordamerika;
+    document.querySelector("ValueFour").innerHTML = "" + ValueFourNordamerika;
+    document.querySelector(".chart").setAttribute('style', 'height:' + ValueTwoNordamerika + '%');
+}
 //# sourceMappingURL=Aufgabe6.js.map

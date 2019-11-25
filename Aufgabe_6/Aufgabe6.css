@@ -24,6 +24,17 @@ html, body {
     background: white;
 }
 
+nav {
+    margin-bottom: 60px;
+}
+
+section {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+
+
 #nordamerika {
     margin-bottom: 60px;
 }
@@ -78,16 +89,6 @@ html, body {
 
 #Title {
     color: whitesmoke;
-}
-
-nav {
-    margin-bottom: 60px;
-}
-
-section {
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
 }
 
 .europe {
