@@ -20,3 +20,13 @@ Bearbeitung wie gehabt: als Unterordner in Ihrem Git Repository (/Aufgabe_6); da
 
 
 ## Abgabe 5 bis Mittwoch, 27.11.2019 18:00 Uhr
+
+Herangehensweise:
+- alle Variablen eines Kontinents in eine Funktion
+- Eventhandling -> Klick 
+- Werte in Html schreiben (anstatt in Konsole wie bei Aufgabe 5)
+    d.h. zb h1 selektieren und dann innerHtml
+    oder zb nur Wert ändern ("Europa") als span in html -> in ts dann span selektieren 
+
+    balken -> style soll manipuliert werden; in dem Fall die Höhe des Anzeigebalkens
+    
