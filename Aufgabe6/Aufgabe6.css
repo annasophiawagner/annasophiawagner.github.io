@@ -78,7 +78,7 @@ section {
 }
 .europa:hover {
     transform: scale(1.1);
-    -webkit-filter: invert(1);
+    -webkit-filter: invert(2);
     filter: invert(1);
 }
 
