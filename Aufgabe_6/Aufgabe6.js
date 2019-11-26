@@ -36,7 +36,8 @@ function functioneuropa() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoEuropa;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeEuropa;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourEuropa;
-    document.querySelector(".chart").setAttribute('style', 'height:' + europa2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 13.5%");
+    document.querySelector(".chartText").innerHTML = "13.5%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.europa').addEventListener('click', functioneuropa);
@@ -47,7 +48,8 @@ function functionnordamerika() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoNordamerika;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeNordamerika;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourNordamerika;
-    document.querySelector(".chart").setAttribute('style', 'height:' + nordamerika2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 19.5%");
+    document.querySelector(".chartText").innerHTML = "19.5%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.nordamerika').addEventListener('click', functionnordamerika);
@@ -58,7 +60,8 @@ function functionsüdamerika() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoSüdamerika;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeSüdamerika;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourSüdamerika;
-    document.querySelector(".chart").setAttribute('style', 'height:' + südamerika2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 4.1%");
+    document.querySelector(".chartText").innerHTML = "4.1%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.südamerika').addEventListener('click', functionsüdamerika);
@@ -69,7 +72,8 @@ function functionafrika() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAfrika;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAfrika;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAfrika;
-    document.querySelector(".chart").setAttribute('style', 'height:' + afrika2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 3.98%");
+    document.querySelector(".chartText").innerHTML = "3.98%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.afrika').addEventListener('click', functionafrika);
@@ -80,7 +84,8 @@ function functionasien() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAsien;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAsien;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAsien;
-    document.querySelector(".chart").setAttribute('style', 'height:' + asien2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + "52.3" + "%");
+    document.querySelector(".chartText").innerHTML = "52.3%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.asien').addEventListener('click', functionasien);
@@ -91,7 +96,8 @@ function functionauastralien() {
     document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAustralien;
     document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAustralien;
     document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAustralien;
-    document.querySelector(".chart").setAttribute('style', 'height:' + australien2018);
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 6.8%");
+    document.querySelector(".chartText").innerHTML = "6.8%";
 }
 window.addEventListener('load', function () {
     document.querySelector('.australien').addEventListener('click', functionauastralien);
