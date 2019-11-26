@@ -1,11 +1,3 @@
-var leerzeichen = " ";
-var überschrift1 = "CO2 EMISSIONEN WELTWEIT";
-var überschrift2 = "EUROPA";
-var überschrift3 = "AFRIKA";
-var überschrift4 = "SÜDAMERIKA";
-var überschrift5 = "NORDAMERIKA";
-var überschrift6 = "ASIEN";
-var überschrift7 = "AUSTRALIEN";
 var afrika2018 = 1235.5;
 var südamerika2018 = 1261.5;
 var europa2018 = 4209.3;
@@ -39,24 +31,69 @@ var ValueTwoAustralien = (australien2018 / gesamt2018) * 100;
 var ValueThreeAustralien = (australien2018 - australien2008) * 100 / australien2008;
 var ValueFourAustralien = (australien2018 - australien2008);
 function functioneuropa() {
-    document.querySelector("#Title").innerHTML = "CO2 Emissionen in Europa";
-    document.querySelector("#ValueOneText").innerHTML = "Emission in Europa Stand 2018";
-    document.querySelector("#ValueOne").innerHTML = "" + europa2018;
-    document.querySelector("#ValueTwo").innerHTML = "" + ValueTwoEuropa;
-    document.querySelector("#ValueThree").innerHTML = "" + ValueThreeEuropa;
-    document.querySelector("#ValueFour").innerHTML = "" + ValueFourEuropa;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ValueTwoEuropa + '%');
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Europa";
+    document.querySelector(".Emission2018").innerHTML = "" + europa2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoEuropa;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeEuropa;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourEuropa;
+    document.querySelector(".chart").setAttribute('style', 'height:' + europa2018);
 }
 window.addEventListener('load', function () {
-    this.document.querySelector('#europa').addEventListener('click', functioneuropa);
+    document.querySelector('.europa').addEventListener('click', functioneuropa);
 });
 function functionnordamerika() {
-    document.querySelector("#Titel").innerHTML = "CO2 Emissionen in Europa";
-    document.querySelector("ValueOneText").innerHTML = "Emission in Nordamerika Stand 2018";
-    document.querySelector("ValueOne").innerHTML = "" + nordamerika2018;
-    document.querySelector("ValueTwo").innerHTML = "" + ValueTwoNordamerika;
-    document.querySelector("ValueThree").innerHTML = "" + ValueThreeNordamerika;
-    document.querySelector("ValueFour").innerHTML = "" + ValueFourNordamerika;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ValueTwoNordamerika + '%');
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Nordamerika";
+    document.querySelector(".Emission2018").innerHTML = "" + nordamerika2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoNordamerika;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeNordamerika;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourNordamerika;
+    document.querySelector(".chart").setAttribute('style', 'height:' + nordamerika2018);
 }
+window.addEventListener('load', function () {
+    document.querySelector('.nordamerika').addEventListener('click', functionnordamerika);
+});
+function functionsüdamerika() {
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Südamerika";
+    document.querySelector(".Emission2018").innerHTML = "" + südamerika2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoSüdamerika;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeSüdamerika;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourSüdamerika;
+    document.querySelector(".chart").setAttribute('style', 'height:' + südamerika2018);
+}
+window.addEventListener('load', function () {
+    document.querySelector('.südamerika').addEventListener('click', functionsüdamerika);
+});
+function functionafrika() {
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Afrika";
+    document.querySelector(".Emission2018").innerHTML = "" + afrika2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAfrika;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAfrika;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAfrika;
+    document.querySelector(".chart").setAttribute('style', 'height:' + afrika2018);
+}
+window.addEventListener('load', function () {
+    document.querySelector('.afrika').addEventListener('click', functionafrika);
+});
+function functionasien() {
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Asien";
+    document.querySelector(".Emission2018").innerHTML = "" + asien2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAsien;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAsien;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAsien;
+    document.querySelector(".chart").setAttribute('style', 'height:' + asien2018);
+}
+window.addEventListener('load', function () {
+    document.querySelector('.asien').addEventListener('click', functionasien);
+});
+function functionauastralien() {
+    document.querySelector(".Titel").innerHTML = "CO2 Emission in Australien";
+    document.querySelector(".Emission2018").innerHTML = "" + australien2018;
+    document.querySelector(".EmissionRelativ").innerHTML = "" + ValueTwoAustralien;
+    document.querySelector(".EmissionÄnderung1").innerHTML = "" + ValueThreeAustralien;
+    document.querySelector(".EmissionÄnderung2").innerHTML = "" + ValueFourAustralien;
+    document.querySelector(".chart").setAttribute('style', 'height:' + australien2018);
+}
+window.addEventListener('load', function () {
+    document.querySelector('.australien').addEventListener('click', functionauastralien);
+});
 //# sourceMappingURL=Aufgabe6.js.map
