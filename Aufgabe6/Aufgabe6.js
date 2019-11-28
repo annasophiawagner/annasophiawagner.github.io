@@ -40,7 +40,7 @@ function functioneuropa() {
     document.querySelector(".chartText").innerHTML = "13.5%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.europa').addEventListener('click', functioneuropa);
+    document.querySelector('.europa').addEventListener('mouseover', functioneuropa);
 });
 function functionnordamerika() {
     document.querySelector(".Titel").innerHTML = "CO2 Emission in Nordamerika";
@@ -52,7 +52,7 @@ function functionnordamerika() {
     document.querySelector(".chartText").innerHTML = "19.5%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.nordamerika').addEventListener('click', functionnordamerika);
+    document.querySelector('.nordamerika').addEventListener('mouseover', functionnordamerika);
 });
 function functionsüdamerika() {
     document.querySelector(".Titel").innerHTML = "CO2 Emission in Südamerika";
@@ -64,7 +64,7 @@ function functionsüdamerika() {
     document.querySelector(".chartText").innerHTML = "4.1%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.südamerika').addEventListener('click', functionsüdamerika);
+    document.querySelector('.südamerika').addEventListener('mouseover', functionsüdamerika);
 });
 function functionafrika() {
     document.querySelector(".Titel").innerHTML = "CO2 Emission in Afrika";
@@ -76,7 +76,7 @@ function functionafrika() {
     document.querySelector(".chartText").innerHTML = "3.98%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.afrika').addEventListener('click', functionafrika);
+    document.querySelector('.afrika').addEventListener('mouseover', functionafrika);
 });
 function functionasien() {
     document.querySelector(".Titel").innerHTML = "CO2 Emission in Asien";
@@ -88,7 +88,7 @@ function functionasien() {
     document.querySelector(".chartText").innerHTML = "52.3%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.asien').addEventListener('click', functionasien);
+    document.querySelector('.asien').addEventListener('mouseover', functionasien);
 });
 function functionauastralien() {
     document.querySelector(".Titel").innerHTML = "CO2 Emission in Australien";
@@ -100,6 +100,6 @@ function functionauastralien() {
     document.querySelector(".chartText").innerHTML = "6.8%";
 }
 window.addEventListener('load', function () {
-    document.querySelector('.australien').addEventListener('click', functionauastralien);
+    document.querySelector('.australien').addEventListener('mouseover', functionauastralien);
 });
 //# sourceMappingURL=Aufgabe6.js.map
