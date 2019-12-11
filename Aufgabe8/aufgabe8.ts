@@ -49,63 +49,45 @@ window.addEventListener("load", function (beat) {
 
 /*Play, Record, Trash*/
 
+var tempo;
+var index: number = 0;
+var record = false;
+
 function playSample(beat) {
     var sound = new Audio("assets/" + beat);
     sound.play();
 }
 window.addEventListener("load", function (beat) {
-    document.querySelector("#play").addEventListener("click", playsound);
+    document.querySelector("#play").addEventListener("click", playBeat);
 });
 
-function playsound() {
-    var mybeat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
-    var index = 0;
-    var interval = setInterval(mySound, 300);
-    function mySound() {
-        var MyMelody = new Audio(mybeat[index]);
-        MyMelody.play();
-        index += 1;
-        if (index > 11)
-            index = 0;
-        console.log(mybeat[index]);
-    }
-}
-
-var Record = false;
-var Kick;
-var Beat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
-
 function playBeat() {
-    var index = 0;
-
     if (document.getElementById("play").classList.contains("icon-play-circled")) {
-        document.getElementById("play").classList.remove("icon-play-circled");
+        document.getElementById("play").classList.remove("icons-play-circled");
         document.getElementById("play").classList.add("icon-stop");
-        Kick = setInterval(myBeat, 300);
-        Record = false;
-        console.log("play");
+        tempo = setInterval(dnb, 300);
+        record = false;
 
     }
     else {
         document.getElementById("play").classList.remove("icon-stop");
         document.getElementById("play").classList.add("icon-play-circled");
-        clearInterval(Kick);
-        console.log("pause");
+        clearInterval(tempo);
     }
+}
 
-    function myBeat() {
-        playSample(Beat[index]);
-        index += 1;
-        if (index > (Beat.length - 1))
-            index = 0;
-        console.log(Beat[index]);
-    }
+function dnb() {
+    playSample(playBeat[index]);
+    index += 1;
+    console.log(index);
+    if (index > (playBeat.length - 1))
+        index = 0;
 }
+
 function deleteBeat() {
-    Beat.length = 0;
-    console.log("This is deleting the Beat");
+    playBeat.length = 0;
 }
+
 function recordBeat() {
-    Record = true;
-    console.log("This is recording a new Beat");
+    record = true;
 }
