@@ -61,18 +61,18 @@ var Kick;
 var Beat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
 function playBeat() {
     var index = 0;
-    if (document.getElementById("Play").classList.contains("icon-play-circled")) {
-        document.getElementById("Play").classList.remove("icon-play-circled");
-        document.getElementById("Play").classList.add("icon-stop");
+    if (document.getElementById("play").classList.contains("icon-play-circled")) {
+        document.getElementById("play").classList.remove("icon-play-circled");
+        document.getElementById("play").classList.add("icon-stop");
         Kick = setInterval(myBeat, 300);
         Record = false;
-        console.log("Play");
+        console.log("play");
     }
     else {
-        document.getElementById("Play").classList.remove("icon-stop");
-        document.getElementById("Play").classList.add("icon-play-circled");
+        document.getElementById("play").classList.remove("icon-stop");
+        document.getElementById("play").classList.add("icon-play-circled");
         clearInterval(Kick);
-        console.log("Pause");
+        console.log("pause");
     }
     function myBeat() {
         playSample(Beat[index]);
