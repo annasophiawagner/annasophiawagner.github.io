@@ -141,3 +141,48 @@ h1 {
 #ButtonNine:hover {
     transform: scale(1.1);
 }
+
+#play {
+    position: absolute;
+    left: 45%;
+    top: 73%;
+    font-size: 90px; 
+    color: white;
+    font-size: 2em;
+    background: none;
+}
+
+#play:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+#stop {
+    position: absolute;
+    left: 48%;
+    top: 73%;
+    font-size: 90px; 
+    color: white; 
+    font-size: 2em;
+    background: none;
+}
+
+#stop:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+#record {
+    position: absolute;
+    left: 51%;
+    top: 73%;
+    font-size: 90px; 
+    color: white;
+    font-size: 2em;
+    background: none;
+}
+
+#record:hover {
+    transform: scale(1.2);
+    color: black;
+}
