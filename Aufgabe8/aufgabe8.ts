@@ -1,94 +1,58 @@
-/*Sample PLay*/ 
-var Kick;
-var Beat = ["hihat.mp3", "snare.mp3", "C.mp3", "snare.mp3", "kick.mp3", "snare.mp3"];
-var music = false;
-
-function playSample(beat) {
-    var sound = new Audio("assets/" + beat);
-    sound.play();
-}
-
-window.addEventListener("load", function (beat) {
-    document.querySelector(".icon-play-circled").addEventListener("click", playsound);
+window.addEventListener("load", function () {
+    document.querySelector("#ButtonOne").addEventListener("click", function () { playSample("F.mp3"); });
+    document.querySelector("#ButtonTwo").addEventListener("click", function () { playSample("G.mp3"); });
+    document.querySelector("#ButtonThree").addEventListener("click", function () { playSample("A.mp3"); });
+    document.querySelector("#ButtonFour").addEventListener("click", function () { playSample("C.mp3"); });
+    document.querySelector("#ButtonFive").addEventListener("click", function () { playSample("laugh-1.mp3"); });
+    document.querySelector("#ButtonSix").addEventListener("click", function () { playSample("laugh-2.mp3"); });
+    document.querySelector("#ButtonSeven").addEventListener("click", function () { playSample("snare.mp3"); });
+    document.querySelector("#ButtonEight").addEventListener("click", function () { playSample("kick.mp3"); });
+    document.querySelector("#ButtonNine").addEventListener("click", function () { playSample("hihat.mp3"); });
+    document.querySelector("#play").addEventListener("click", playbutton); 
+    document.querySelector("#record").addEventListener("click", recordbutton);
+    document.querySelector("#delete").addEventListener("click", deletebutton);
 });
-
-function playsound() {
-    var mybeat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
-    var index = 0;
-    var interval = setInterval(mySound, 300);
-    function mySound() {
-        var MyMelody = new Audio(mybeat[index]);
-        MyMelody.play();
-        index += 1;
-        if (index > 11)
-            index = 0;
-        console.log(mybeat[index]);
+var Kick;
+var Beat = ["kick.mp3", "kick.mp3", "snare.mp3", "hihat.mp3"];
+var record = false;
+function playSample(sounds) {
+    var sound = new Audio("assets/" + sounds);
+    sound.play();
+    if (record == true) {
+        Beat.push(sounds);
     }
 }
-
-function playBeat() {
+function playbutton() {
     var index = 0;
-    /*start*/
-    if (document.getElementById("play").classList.contains("fa-play")) {
-        document.getElementById("play").classList.remove("fa-play");
-        document.getElementById("play").classList.add("fa-pause");
-        Kick = setInterval(myBeat, 300);
-        music = false;
+    if (document.getElementById("Play").classList.contains("icon-play-circled")) {
+        document.getElementById("Play").classList.remove("icon-play-circled");
+        document.getElementById("Play").classList.add("icon-stop");
+        Kick = setInterval(playBeat, 500);
+        record = false;
+        console.log("Play");
     }
-    /*stop*/
     else {
-        document.getElementById("play").classList.remove("fa-pause");
-        document.getElementById("play").classList.add("fa-play");
+        document.getElementById("Play").classList.remove("icon-stop");
+        document.getElementById("Play").classList.add("icon-play-circled");
         clearInterval(Kick);
+        console.log("Pause");
     }
-    /*beat*/
-    function myBeat() {
+    //Beat
+    function playBeat() {
         playSample(Beat[index]);
         index += 1;
-        if (index > (Beat.length - 1))
+        if (index == (Beat.length)) {
             index = 0;
+            console.log(Beat[index]);
+        }
     }
 }
-function recordBeat() {
-    music = true;
-}
-function deleteBeat() {
+function deletebutton() {
     Beat.length = 0;
+    console.log("delete Beat");
 }
-/*Buttons*/
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonOne").addEventListener("mousedown", function () { playSample("F.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonTwo").addEventListener("mousedown", function () { playSample("G.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonThree").addEventListener("mousedown", function () { playSample("A.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonFour").addEventListener("mousedown", function () { playSample("C.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonFive").addEventListener("mousedown", function () { playSample("laugh-1.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonSix").addEventListener("mousedown", function () { playSample("laugh-2.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonSeven").addEventListener("mousedown", function () { playSample("snare.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonEight").addEventListener("mousedown", function () { playSample("kick.mp3"); });
-});
-
-window.addEventListener("load", function (beat) {
-    document.querySelector("#ButtonNine").addEventListener("mousedown", function () { playSample("hihat.mp3"); });
-});
-
+function recordbutton() {
+    record = true;
+    console.log("record new Beat");
+}
+//# sourceMappingURL=drumpad.js.map
