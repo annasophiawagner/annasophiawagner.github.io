@@ -1,35 +1,90 @@
-window.addEventListener("load", function () {
-    document.querySelector("#ButtonOne").addEventListener("click", function () { playSample("F.mp3"); });
-    document.querySelector("#ButtonTwo").addEventListener("click", function () { playSample("G.mp3"); });
-    document.querySelector("#ButtonThree").addEventListener("click", function () { playSample("A.mp3"); });
-    document.querySelector("#ButtonFour").addEventListener("click", function () { playSample("C.mp3"); });
-    document.querySelector("#ButtonFive").addEventListener("click", function () { playSample("laugh-1.mp3"); });
-    document.querySelector("#ButtonSix").addEventListener("click", function () { playSample("laugh-2.mp3"); });
-    document.querySelector("#ButtonSeven").addEventListener("click", function () { playSample("snare.mp3"); });
-    document.querySelector("#ButtonEight").addEventListener("click", function () { playSample("kick.mp3"); });
-    document.querySelector("#ButtonNine").addEventListener("click", function () { playSample("hihat.mp3"); });
-    document.querySelector("#play").addEventListener("click", playbutton); 
-    document.querySelector("#record").addEventListener("click", recordbutton);
-    document.querySelector("#delete").addEventListener("click", deletebutton);
+/*Buttons*/
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonOne").addEventListener("mousedown", function () { playSample("F.mp3"); });
 });
-var Kick;
-var Beat = ["laugh-1.mp3", "kick.mp3", "snare.mp3", "hihat.mp3", "A.mp3"];
-var record = false;
-function playSample(sounds) {
-    var sound = new Audio("assets/" + sounds);
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonTwo").addEventListener("mousedown", function () { playSample("G.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonThree").addEventListener("mousedown", function () { playSample("A.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonFour").addEventListener("mousedown", function () { playSample("C.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonFive").addEventListener("mousedown", function () { playSample("laugh-1.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonSix").addEventListener("mousedown", function () { playSample("laugh-2.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonSeven").addEventListener("mousedown", function () { playSample("snare.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonEight").addEventListener("mousedown", function () { playSample("kick.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#ButtonNine").addEventListener("mousedown", function () { playSample("hihat.mp3"); });
+});
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#Play").addEventListener("click", playBeat);
+})
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#Record").addEventListener("click", recordBeat);
+})
+
+window.addEventListener("load", function (beat) {
+    document.querySelector("#Delete").addEventListener("click", deleteBeat);
+})
+
+/*Play, Record, Trash*/
+
+function playSample(beat) {
+    var sound = new Audio("assets/" + beat);
     sound.play();
-    if (record == true) {
-        Beat.push(sounds);
+}
+window.addEventListener("load", function (beat) {
+    document.querySelector("#play").addEventListener("click", playsound);
+});
+
+function playsound() {
+    var mybeat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
+    var index = 0;
+    var interval = setInterval(mySound, 300);
+    function mySound() {
+        var MyMelody = new Audio(mybeat[index]);
+        MyMelody.play();
+        index += 1;
+        if (index > 11)
+            index = 0;
+        console.log(mybeat[index]);
     }
 }
-function playbutton() {
+
+var Record = false;
+var Kick;
+var Beat = ["assets/laugh-2.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/A.mp3", "assets/F.mp3", "assets/C.mp3", "assets/hihat.mp3"];
+
+function playBeat() {
     var index = 0;
+
     if (document.getElementById("Play").classList.contains("icon-play-circled")) {
         document.getElementById("Play").classList.remove("icon-play-circled");
         document.getElementById("Play").classList.add("icon-stop");
-        Kick = setInterval(playBeat, 500);
-        record = false;
+        Kick = setInterval(myBeat, 300);
+        Record = false;
         console.log("Play");
+
     }
     else {
         document.getElementById("Play").classList.remove("icon-stop");
@@ -37,22 +92,20 @@ function playbutton() {
         clearInterval(Kick);
         console.log("Pause");
     }
-    //Beat
-    function playBeat() {
+
+    function myBeat() {
         playSample(Beat[index]);
         index += 1;
-        if (index == (Beat.length)) {
+        if (index > (Beat.length - 1))
             index = 0;
-            console.log(Beat[index]);
-        }
+        console.log(Beat[index]);
     }
 }
-function deletebutton() {
+function deleteBeat() {
     Beat.length = 0;
-    console.log("delete Beat");
+    console.log("This is deleting the Beat");
 }
-function recordbutton() {
-    record = true;
-    console.log("record new Beat");
+function recordBeat() {
+    Record = true;
+    console.log("This is recording a new Beat");
 }
-//# sourceMappingURL=drumpad.js.map
