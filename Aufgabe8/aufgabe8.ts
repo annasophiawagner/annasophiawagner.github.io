@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
     document.querySelector("#delete").addEventListener("click", deletebutton);
 });
 var Kick;
-var Beat = ["kick.mp3", "kick.mp3", "snare.mp3", "hihat.mp3"];
+var Beat = ["laugh-1.mp3", "kick.mp3", "snare.mp3", "hihat.mp3", "A.mp3"];
 var record = false;
 function playSample(sounds) {
     var sound = new Audio("assets/" + sounds);
