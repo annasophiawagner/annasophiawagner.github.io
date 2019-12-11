@@ -67,7 +67,7 @@ function dnb() {
         index = 0;
 }
 function deleteBeat() {
-    playBeat.length = 0;
+    playBeat.length;
 }
 function recordBeat() {
     record = true;

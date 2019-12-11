@@ -85,7 +85,7 @@ function dnb() {
 }
 
 function deleteBeat() {
-    playBeat.length = 0;
+    playBeat.length;
 }
 
 function recordBeat() {
