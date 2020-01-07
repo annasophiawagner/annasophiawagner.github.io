@@ -36,6 +36,7 @@ h1 {
 }
 
 .addButton {
+    background-color: black;
     margin-top: 1.35em;
     position: absolute;
     left: 48%;
@@ -44,6 +45,7 @@ h1 {
     height: 35px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .newtask {
