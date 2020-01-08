@@ -1,10 +1,7 @@
 // Creating the Close Button for tasks //
 var myList = document.getElementsByTagName("li");
 var index;
-for (index; 0 = ; index < myList.length)
-    ;
-index++;
-{
+for (index = 0; index < myList.length; index++) {
     var aSpanTag = document.createElement("SPAN");
     var someText = document.createTextNode("\u00D7");
     aSpanTag.className = "close";
@@ -14,7 +11,7 @@ index++;
 // Close Button //
 var closeButton = document.getElementsByClassName("close");
 for (index = 0; index < closeButton.length; index++) {
-    closeButton[index].click = function () {
+    closeButton[index].onclick = function () {
         var theDiv = this.parentElement;
         theDiv.style.display = "none";
     };
@@ -22,8 +19,8 @@ for (index = 0; index < closeButton.length; index++) {
     var ulList = document.querySelector('ul');
     ulList.addEventListener('click', function (event) {
         console.log(event);
-        if (event.target.tagName === "LI") {
-            event.target.classList.toggle('checked');
+        if (document.getElementById('ul').tagName === "LI") {
+            document.getElementById('ul').classList.toggle('checked');
         }
     }, false);
     // Creating ToDos Function //
@@ -46,7 +43,7 @@ for (index = 0; index < closeButton.length; index++) {
         li.appendChild(thePanTag);
         // Removing Tasks when clicked //
         for (index = 0; index < closeButton.length; index++) {
-            closeButton[index].click = function () {
+            closeButton[index].onclick = function () {
                 var theDiv = this.parentElement;
                 theDiv.style.display = "none";
             };
