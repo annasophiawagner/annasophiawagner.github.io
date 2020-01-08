@@ -20,6 +20,33 @@ body {
     clear: both;
 }
 
+.fa-trash {
+    color: #f9e1e0;
+}
+
+.fa-trash:hover {
+    color: #f67280;
+}
+
+ul {
+    position: absolute;
+    top: 150px;
+    width: 90%;
+    float: left;
+    border-radius: 5px;
+}
+
+li {
+    padding: 5px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    background: #f43c2f;
+    box-shadow: 1px 1px 2px rgba(8, 16, 24, 0.699);
+    margin: 20px;
+    border-radius: 2px;
+    list-style: none;
+}
+
 #Input {
     width: 70%;
     padding: 10px;
@@ -50,63 +77,6 @@ body {
 .createButton:hover {
     background-color: grey;
     color: white;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    position: relative;
-    background-color: #cecece;
-    list-style-type: none;
-    cursor: pointer;padding: 10px 6px 10 px 30px;
-    transition: 0.3s;
-
-    /*making list unselectable*/
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-ul li:nth-child(odd) {
-    background-color: #f6f9f3;
-}
-
-ul li.checked {
-    background: #282828;
-    color: white;
-    text-decoration: line-through;
-    
-
-}
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: white;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 15px;
-    transform: rotate(45deg);
-    width: 15px;
-    height: 10px;
-}
-
-ul li:hover {
-    background-color: #ddd;
-}
-
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 10px 15px 10px 15px;
-}
-
-.close:hover {
-    background: #f43c2f;
 }
 
 
