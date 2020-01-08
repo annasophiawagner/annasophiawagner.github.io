@@ -11,7 +11,7 @@ for (index = 0; index < myList.length; index++) {
 // Close Button //
 var closeButton = document.getElementsByClassName("close");
 for (index = 0; index < closeButton.length; index++) {
-    closeButton[index].onclick = function () {
+    document.getElementById('closeButton')[index].click = function () {
         var theDiv = this.parentElement;
         theDiv.style.display = "none";
     };
@@ -43,7 +43,7 @@ for (index = 0; index < closeButton.length; index++) {
         li.appendChild(thePanTag);
         // Removing Tasks when clicked //
         for (index = 0; index < closeButton.length; index++) {
-            closeButton[index].onclick = function () {
+            document.getElementById('closeButton')[index].click = function () {
                 var theDiv = this.parentElement;
                 theDiv.style.display = "none";
             };

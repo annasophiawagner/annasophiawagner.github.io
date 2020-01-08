@@ -15,7 +15,7 @@ for(index = 0; index < myList.length; index++){
 var closeButton = document.getElementsByClassName("close");
 
 for (index = 0; index < closeButton.length; index++){
-    closeButton[index].onclick = function(){
+    document.getElementById('closeButton')[index].click = function(){
         var theDiv = this.parentElement;
         theDiv.style.display = "none";
     }
@@ -53,7 +53,7 @@ function createNewElement(){
 
     // Removing Tasks when clicked //
     for (index = 0; index < closeButton.length; index++){
-        closeButton[index].onclick = function(){
+        document.getElementById('closeButton')[index].click = function(){
             var theDiv = this.parentElement;
             theDiv.style.display = "none";
         }
