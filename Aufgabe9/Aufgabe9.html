@@ -1,30 +1,24 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aufgabe 9</title>
-    <link rel="stylesheet" type="text/css" href="Aufgabe9.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <script src="Aufgabe9.js"></script>
-</head>
-<h1>TO DO LIST</h1>
-    <div class="number"></div>
-    <div class="todos">
-        <input type="text" placeholder="New To Do" class="newtask"></input>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Aufgabe9.css" />
+    <title>Aufgabe 9 - ToDo Liste</title>
+  </head>
+  <body>
+    <div>
+    <div id="header" class="header">
+        <h1>To Do List</h1>
+        <input type="text" id="Input" placeholder="New Task">
+        <span onclick="createNewElement()" class="createButton">add</span>
     </div>
-    <button class ="addButton">add</button> 
-    <div class="Rahmen">
-        <!--<div class="Template">
-            <button class="far fa-circle checkbox" id="circle"></button>
-            <input class="firsttask" value="Putzen"></input>
-            <button class="fas fa-trash-alt trash" id="delete"></button>
-        </div> -->
+    <ul id="ul">
+        <li>work</li>
+        <li>learn</li>
+        <li>cook</li>
+    </ul>
     </div>
+  </body>
+  <script src="./Aufgabe9.js"></script>
 
-<body>
-    
-</body>
 </html>

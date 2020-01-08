@@ -1,48 +1,56 @@
-var taskcounter = 0;
-window.addEventListener("load", function () {
-    document.querySelector(".addButton").addEventListener("click", AddTaskText);
-    document.querySelector(".number").addEventListener("click", AddTaskText);
-});
-function AddTaskText() {
-    var newtask = document.querySelector(".newtask").nodeValue;
-    console.log(newtask);
-    addTaskToList(newtask); // Aufruf der Funktion drunter
-    // Counter:
-    var element = document.querySelector(".Rahmen");
-    var numberofChildren = element.children.length;
-    taskcounter = numberofChildren;
-    console.log("Die Anzahl der To-Dos lautet:" + numberofChildren);
-    document.querySelector(".number").innerHTML = numberofChildren + " in total";
+// Creating the Close Button for tasks //
+var myList = document.getElementsByTagName("li");
+var index;
+for (index; 0 = ; index < myList.length)
+    ;
+index++;
+{
+    var aSpanTag = document.createElement("SPAN");
+    var someText = document.createTextNode("\u00D7");
+    aSpanTag.className = "close";
+    aSpanTag.appendChild(someText);
+    myList[index].appendChild(aSpanTag);
 }
-function addTaskToList(newTaskValue) {
-    var addElement = document.createElement("div");
-    addElement.setAttribute("class", "Template");
-    addElement.setAttribute("id", "TaskId" + taskcounter); // Template konstruiert
-    var myHtmlTemplate = ""; // Template Inhalte
-    myHtmlTemplate += "<button onclick=\"CheckedButton(this)\" class=\"far fa-circle checkbox\" id=\"circle" + taskcounter + "\"></button>";
-    myHtmlTemplate += "<input class=\"firsttask\" id=\"firsttask" + taskcounter + "\" value=\"" + newTaskValue + "\" ></input>";
-    myHtmlTemplate += "<button onclick=\"DeleteTaskText(this)\" class=\"far fa-trash-alt trash\" id=\"delete" + taskcounter + "\"></button>";
-    addElement.innerHTML = myHtmlTemplate;
-    document.querySelector(".Rahmen").appendChild(addElement); // Hinzufügen vom Template
-    console.log("addTasktoList:" + newTaskValue);
-}
-function DeleteTaskText(ClickedTrash) {
-    console.log("This is deleating the task");
-    ClickedTrash.parentElement.remove(); // div wird bei click auf Tonne gelöscht
-    taskcounter--;
-    // Counter
-    var element = document.querySelector(".Rahmen");
-    var numberofChildren = element.children.length;
-    document.querySelector(".number").innerHTML = numberofChildren + " in total";
-}
-function CheckedButton(ClickedButton) {
-    if (ClickedButton.classList.contains("fa-circle")) {
-        ClickedButton.classList.remove("fa-circle");
-        ClickedButton.classList.add("fa-check-circle");
-    }
-    else {
-        ClickedButton.classList.remove("fa-check-circle");
-        ClickedButton.classList.add("fa-circle");
+// Close Button //
+var closeButton = document.getElementsByClassName("close");
+for (index = 0; index < closeButton.length; index++) {
+    closeButton[index].click = function () {
+        var theDiv = this.parentElement;
+        theDiv.style.display = "none";
+    };
+    // Creating Checked ToDos//
+    var ulList = document.querySelector('ul');
+    ulList.addEventListener('click', function (event) {
+        console.log(event);
+        if (event.target.tagName === "LI") {
+            event.target.classList.toggle('checked');
+        }
+    }, false);
+    // Creating ToDos Function //
+    function createNewElement() {
+        var li = document.createElement('li');
+        var InputValue = document.getElementById("Input").nodeValue;
+        var textNode = document.createTextNode(InputValue);
+        li.appendChild(textNode);
+        if (InputValue === '') {
+            alert("Hey this cannot be empty");
+        }
+        else {
+            document.getElementById("ul").appendChild(li);
+        }
+        document.getElementById("Ipnut").nodeValue = "";
+        var thePanTag = document.createElement("SPAN");
+        var text = document.createTextNode("\u00D7");
+        thePanTag.className = "close";
+        thePanTag.appendChild(text);
+        li.appendChild(thePanTag);
+        // Removing Tasks when clicked //
+        for (index = 0; index < closeButton.length; index++) {
+            closeButton[index].click = function () {
+                var theDiv = this.parentElement;
+                theDiv.style.display = "none";
+            };
+        }
     }
 }
 //# sourceMappingURL=Aufgabe9.js.map
