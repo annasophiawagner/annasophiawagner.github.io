@@ -16,7 +16,8 @@ main {
 .inputGroup {
     position: relative;
 }
-#inputTodo {
+
+.NewTaskFillIn {
     background: white;
     font-size: 20px;
     padding: 20px 50px;
@@ -28,7 +29,7 @@ main {
     outline: none;
 }
 
-#addButton {
+.AddButton {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -39,11 +40,18 @@ main {
     color: grey;
     cursor: pointer;
 }
-#addButton:hover {
-    color: black;
+
+.AddButton:hover {
+    color: black
 }
 
-#todos {
+.Tasks {
+    background-color: #ffe6e6;
+    text-align: center;
+    margin: 5;
+}
+
+#Todos {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.42);
 }
 
@@ -67,7 +75,6 @@ main {
 }
 .check i {
     position: relative;
-    left: 5px;
     top: 5px;
 }
 .check.false i {
