@@ -72,6 +72,8 @@ function count(){
     document.querySelector("#counter").innerHTML = "Total: " + counter + " Open: " + open + " Closed: " + checked;
 }
 
+//*Artyom library*//
+declare var Artyom: any;
 window.addEventListener("load", function (beat) {
     HTMLlist = document.querySelector("#Todos");
     document.querySelector("#AddButton").addEventListener("click", function () {
