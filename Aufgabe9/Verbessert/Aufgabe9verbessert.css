@@ -1,0 +1,84 @@
+body {
+    background-color: #ffb3b3;
+    margin: 0;
+    width:100%;
+    padding: 100px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-color: #ffcccc;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.NewTaskFillIn {
+    width: 20%;
+    padding: 10px;
+    float: center;
+    font-size: 10px;
+    margin: 0;
+    border-color: #ffb3b3 ;
+    border-radius: 0;
+    height: 10px;
+}
+
+.AddButton {
+    background-color: #ffcccc;
+    padding: 9px;
+    font-size: 9px;
+    width: 14.25%;
+    height: 3%;
+    color: black;
+    float: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.AddButton:hover {
+    background-color: #ffe6e6;
+    margin: 0;
+}
+
+.Tasks {
+    background-color: #ffe6e6;
+    text-align: center;
+    margin: 5;
+}
+
+.Task1 {
+    width: 20%;
+    padding: 10px;
+    float: center;
+    font-size: 10px;
+    margin: 0;
+    border-color: #ffb3b3 ;
+    border-radius: 0;
+    height: 10px;
+}
+
+#Checkbox {
+    background-color: #ffcccc;
+    width: 7%;
+    padding: 7px;
+    text-align: center;
+}
+
+#Checkbox:hover {
+    background-color: #ffe6e6
+}
+
+#DeleteTask {
+    background-color: #ffcccc;
+    width: 7%;
+    padding: 7px;
+    text-align: center
+}
+
+#DeleteTask:hover {
+    background-color: #ffe6e6;
+}
