@@ -15,7 +15,6 @@ function playBeat() {
     if (document.getElementById("play").classList.contains("icon-play-circled")) {
         document.getElementById("play").classList.remove("icon-play-circled");
         document.getElementById("play").classList.add("icon-stop");
-        //tempo = setInterval(dnb, 300);
         record = false;
         sounds.forEach(function (element) {
             playSample(element);
@@ -24,7 +23,6 @@ function playBeat() {
     else {
         document.getElementById("play").classList.remove("icon-stop");
         document.getElementById("play").classList.add("icon-play-circled");
-        //clearInterval(tempo);
     }
 }
 function deleteBeat() {

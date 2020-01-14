@@ -50,7 +50,7 @@ header {
     margin: 5;
 }
 
-.Task1 {
+#Todos {
     width: 20%;
     padding: 10px;
     float: center;
@@ -59,6 +59,33 @@ header {
     border-color: #ffb3b3 ;
     border-radius: 0;
     height: 10px;
+}
+
+.todo {
+    left: 38vw; 
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 20px 50px;
+    background: white;
+    border-bottom: 1px solid grey;
+}
+
+.check {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+.check i {
+    position: relative;
+    top: 5px;
+}
+.check.false i {
+    display: none;
 }
 
 #Checkbox {
@@ -72,13 +99,14 @@ header {
     background-color: #ffe6e6
 }
 
-#DeleteTask {
-    background-color: #ffcccc;
-    width: 7%;
-    padding: 7px;
-    text-align: center
+.trash {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: grey;
+    cursor: pointer;
 }
 
-#DeleteTask:hover {
-    background-color: #ffe6e6;
+.trash:hover {
+    color: black;
 }
