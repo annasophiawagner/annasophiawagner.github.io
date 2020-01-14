@@ -1,10 +1,9 @@
 window.addEventListener("load", function () {
     var artyom = new Artyom();
     artyom.addCommands({
-        indexes: ["Erstelle neue Aufgabe *"],
-        smart: true,
-        action: function (i, wildcard) {
-            console.log("Neue Aufgabe wird erstellt: " + wildcard);
+        indexes: ["hallo"],
+        action: function () {
+            console.log("hey there...");
         }
     });
     function startContinuousArtyom() {
