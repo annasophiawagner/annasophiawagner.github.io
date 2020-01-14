@@ -157,7 +157,7 @@ h1 {
     color: black;
 }
 
-#stop {
+#delete {
     position: absolute;
     left: 48%;
     top: 73%;
@@ -167,7 +167,7 @@ h1 {
     background: none;
 }
 
-#stop:hover {
+#delete:hover {
     transform: scale(1.2);
     color: black;
 }
