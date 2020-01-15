@@ -62,12 +62,13 @@ header {
 }
 
 .todo {
-    left: 38vw; 
+    left: 31.2vw; 
     text-align: center;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
+    width: 147%;
     padding: 20px 50px;
-    background: white;
+    background: #ffe6e6;
     border-bottom: 1px solid grey;
 }
 
